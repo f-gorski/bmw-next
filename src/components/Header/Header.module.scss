@@ -10,15 +10,13 @@
     margin-top: 2em;
     height: 2em;
     margin-bottom: 1em;
-
 }
 .navigationItems {
     display: flex;
     list-style-type: none;
 }
 .navigationItem {
-    color: #fff;
-    font-family: "Cairo", sans-serif;
+    color: var(--hero-font-color);
     font-size: 18px;
     font-weight: 700;
 
@@ -29,12 +27,19 @@
 .headerLine {
     width: 100%;
     border: 1px solid #fff;
-    opacity: .25;
+    opacity: 0.25;
 }
 .headerText {
-    color: #fff;
-    font-family: "Cairo",sans-serif;
+    color: var(--hero-font-color);
     font-weight: 500;
     font-size: 16px;
     margin-left: auto;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    z-index: 20;
 }

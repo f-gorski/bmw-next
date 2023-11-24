@@ -1,0 +1,69 @@
+.heroSection {
+    position: relative;
+    z-index: 10;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--hero-font-color)
+}
+.heroLogo {
+    height: 5.5rem;
+    width: 3rem;
+}
+.heroHeader {
+    font-weight: 700;
+    font-size: 64px;
+}
+.heroSubheader {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--hero-subheader-color)
+}
+.actions {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4em;
+}
+.cta {
+    margin: 0 auto
+}
+.ctaBtn {
+    width: 269px;
+    height: 63px;
+    background-color: var(--bmw-blue);
+    color: var(--hero-font-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+.sliderButtons {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sliderBtn {
+    & + & {
+        margin-left: 1em
+    }
+
+    background-color: var(--hero-font-color);
+    width: 60px;
+    height: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--bmw-blue);
+    }
+}
+.btnActive {
+    background-color: var(--bmw-blue);
+}
+
+@media(min-width: 800px) {
+    .actions {
+        flex-direction: row;
+    }
+}
